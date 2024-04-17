@@ -30,17 +30,14 @@ export default function Chat({ messages }) {
 
   useEffect(() => {
     if (messageEl.current) {
-      messageEl.current.addEventListener("DOMNodeInserted", (event) => {
-        const { currentTarget: target } = event;
-        target.scroll({ top: target.scrollHeight, behavior: "smooth" });
-      });
-    }
+      messageEl.current.scrollTop = messageEl.current.scrollHeight;
+      }
   }, [messages]);
 
   return (
     <div className="container">
-      <div className="chat-container">
-        <div className="messages" ref={messageEl}>
+      <div className="chat-container" ref={messageEl}>
+        <div className="messages" >
           {messages.length > 0 ? (
             messages.map((message, index) => (
               <div

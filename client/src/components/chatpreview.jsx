@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 // import PropTypes from "prop-types";
 import "./chatpreview.css";
 export const Chatpreview = ({
@@ -18,6 +18,11 @@ export const Chatpreview = ({
   //     });
   //   }
   // }, []);
+  useEffect(() => {
+    if (messageE.current) {
+      messageE.current.scrollTop = messageE.current.scrollHeight;
+    }
+  }, [messageinput]);
   return (
     <>
       {messageinput.length > 0 ? (

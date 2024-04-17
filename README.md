@@ -9,6 +9,12 @@ This repository contains code for performing audio level sentiment analysis usin
 - Integration with GPT-4 API for speaker-wise sentiment analysis.
 - FastAPI application for running sentiment analysis locally on `localhost:8000`.
 
+## PROJECT OVERVIEW
+
+**Demo Video:**
+
+[Demo Video Link](https://drive.google.com/file/d/10zrTGrIoMh0bs7Jm6hJqYLUMh3sM0nv5/view?usp=sharing)
+
 ## Folder Structure
 
 - `model/`: Contains reference code for the custom deployed Whisper model on AWS SageMaker.
