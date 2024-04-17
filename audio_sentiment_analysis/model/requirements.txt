@@ -1,6 +1,0 @@
-huggingface
-openai-whisper
-setuptools-rust
-pyannote.audio
-python-dotenv
-pydub

@@ -1,5 +1,0 @@
-openai
-deepgram-sdk
-fastapi
-uvicorn
-python-dotenv
